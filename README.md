@@ -6,14 +6,26 @@ An ohmyzsh plugin that automatically puts the npm modules for the current direct
 
 * ohmyzsh (https://ohmyz.sh/)
 * Go (https://go.dev/)
-* GoReleaser (https://goreleaser.com/install/)
 
 ## Installation
+
+Ensure your `go` binary path is in your $PATH, e.g.
+
+```
+PATH=$HOME/go/bin:$PATH
+...
+```
+
+Install `barnacle` binary.
+
+```
+go install
+```
 
 Create a symlink from ohmyzsh's custom plugins to this repository.
 
 ```
-ln -s $ZSH_CUSTOM/plugins/barnacle ~/settings/barnacle
+ln -s ~/settings/barnacle $ZSH_CUSTOM/plugins/barnacle
 ```
 
 Load the plugin in your `~/.zshrc`.
@@ -23,7 +35,7 @@ Load the plugin in your `~/.zshrc`.
 plugins=(... barnacle ...)
 ``` 
 
-Source your `~/.zshrc`
+Source your `~/.zshrc`.
 
 ```
 source ~/.zshrc

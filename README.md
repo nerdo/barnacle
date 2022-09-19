@@ -25,7 +25,7 @@ go install
 Create a symlink from ohmyzsh's custom plugins to this repository.
 
 ```
-ln -s ~/settings/barnacle $ZSH_CUSTOM/plugins/barnacle
+ln -s ~/go/src/barnacle $ZSH_CUSTOM/plugins/barnacle
 ```
 
 Load the plugin in your `~/.zshrc`.

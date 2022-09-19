@@ -7,7 +7,7 @@ function chpwd() {
 	if [[ -n $_BARNACLE_LOCAL_NPM_BIN_PATH && -d $_BARNACLE_LOCAL_NPM_BIN_PATH ]]
 	then
 		# https://stackoverflow.com/a/18077919
-		path+=$_BARNACLE_LOCAL_NPM_BIN_PATH
+		path=($_BARNACLE_LOCAL_NPM_BIN_PATH $path)
 
 		# https://tech.serhatteker.com/post/2019-12/remove-duplicates-in-path-zsh/
 		typeset -U -g path
